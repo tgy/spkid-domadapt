@@ -1,14 +1,13 @@
 \documentclass[12pt]{article}
 
-\usepackage{lipsum,multicol}
-\usepackage[colorlinks]{hyperref}
-\raggedcolumns
 
 % packages
 \usepackage{amsmath}
 \usepackage{graphics}
 \usepackage{epstopdf}
 \usepackage{enumitem}
+\usepackage[colorlinks]{hyperref}
+\usepackage[xindy, toc, acronym, nonumberlist]{glossaries}
 
 % font settings
 \usepackage[T1]{fontenc}
@@ -16,6 +15,9 @@
 \usepackage[english,french]{babel}
 \usepackage[urw-garamond]{mathdesign}
 \usepackage{garamondx}
+
+\include{glossary}
+\makeglossaries
 
 \begin{document}
 
@@ -36,5 +38,8 @@ Recherche et Développement de l'EPITA}
 \include{dicn}
 \include{evaluation}
 \include{results}
+
+
+\printglossaries
 
 \end{document}

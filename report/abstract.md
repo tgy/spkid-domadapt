@@ -1,5 +1,3 @@
-\selectlanguage{english}
-
 \begin{abstract}
 
     Although the development of the \textbf{i-vector}-based probabilistic linear

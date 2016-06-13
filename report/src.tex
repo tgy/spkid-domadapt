@@ -1,6 +1,5 @@
 \documentclass[12pt]{article}
 
-
 % packages
 \usepackage{amsmath}
 \usepackage{graphics}
@@ -13,11 +12,22 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english,french]{babel}
-\usepackage[urw-garamond]{mathdesign}
-\usepackage{garamondx}
+%\usepackage{stix}
+\usepackage[sc]{mathpazo}
+\linespread{1.05}
+%\usepackage[urw-garamond]{mathdesign}
 
 \include{glossary}
 \makeglossaries
+
+\glossarystyle{long}
+
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+
+\binoppenalty=10000
+\relpenalty=10000
+
+\sloppy
 
 \begin{document}
 
@@ -39,7 +49,8 @@ Recherche et Développement de l'EPITA}
 \include{evaluation}
 \include{results}
 
+\printglossary
 
-\printglossaries
+\printglossary[type=acronym,style=long]
 
 \end{document}

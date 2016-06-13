@@ -3,9 +3,43 @@
 % \newacronym[longplural={Frames per Second}]{fpsLabel}{FPS}{Frame per Second}
 
 \newacronym{ubm}{UBM}{universal background model}
+\newacronym{mfcc}{MFCC}{mel-frequency cepstral coefficients}
+\newacronym{hmm}{HMM}{hidden markov model}
+\newacronym{plda}{PLDA}{probabilistic linear discriminant analysis}
+\newacronym{lda}{LDA}{linear discriminant analysis}
+\newacronym{idvc}{IDVC}{inter-dataset variability compensation}
+\newacronym{swb}{SWB}{Switchboard}
+\newacronym{nap}{NAP}{nuisance attribute projection}
 
 \newglossaryentry{tvm}
 {
     name=total variability matrix,
-    description={lol}
+    description={projection matrix used to project \gls{bw-statistics}
+        on the \gls{tvs}}
+}
+
+\newglossaryentry{tvs}
+{
+    name=total variability space,
+    description={lower dimentional space on which \gls{bw-statistics}
+        are projected}
+}
+
+\newglossaryentry{bw-algorithm}
+{
+    name=Baum-Welch algorithm,
+    description={algorithm used to fit a \gls{hmm}}
+}
+
+\newglossaryentry{bw-statistics}
+{
+    name=Baum-Welch statistics,
+    description={emission matrix of a \gls{hmm} fitted by the
+        \gls{bw-algorithm}}
+}
+
+\newglossaryentry{i-vector}
+{
+    name=i-vector,
+    description={projection of the \gls{bw-statistics} on the \gls{tvs}}
 }

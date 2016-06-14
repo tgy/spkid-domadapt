@@ -20,7 +20,7 @@
 \include{glossary}
 \makeglossaries
 
-\glossarystyle{long}
+\setglossarystyle{long}
 
 \DeclareMathOperator*{\argmax}{\arg\!\max}
 
@@ -34,8 +34,11 @@
 \selectlanguage{english}
 
 \title{Domain Mismatch Compensation for \\Text-Independant Speaker Recognition}
-\author{Valentin Iovene\\\texttt{toogy@lrde.epita.fr}\\LRDE\\Laboratoire de
-Recherche et Développement de l'EPITA}
+\author{
+    Valentin Iovene\\
+    Laboratoire de Recherche et Développement de l'EPITA\\
+    \texttt{toogy@lrde.epita.fr}
+}
 
 \maketitle
 
@@ -44,6 +47,7 @@ Recherche et Développement de l'EPITA}
 \tableofcontents
 
 \include{domain-mismatch}
+\include{compensation-techniques}
 \include{whiteners-library}
 \include{dicn}
 \include{evaluation}

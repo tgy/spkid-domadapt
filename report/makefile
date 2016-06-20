@@ -8,10 +8,12 @@ MD_FILES=abstract \
 
 all:
 	for f in ${MD_FILES}; do pandoc $$f.md -o $$f.tex; done
-	pdflatex src.tex
+	pdflatex src
 	makeglossaries src
-	pdflatex src.tex
+	bibtex src
+	pdflatex src
+	pdflatex src
 
 clean:
 	for f in ${MD_FILES}; do rm -f $$f.tex; rm -f $$f.aux; done
-	rm -f *.toc *.aux *.gls *.glo *.glg *.alg *.acn *xdy *.log *.acr *.out
+	rm -f *.toc *.aux *.gls *.glo *.glg *.alg *.acn *xdy *.log *.acr *.out *.blg *.bbl

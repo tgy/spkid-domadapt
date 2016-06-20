@@ -2,9 +2,11 @@
 
 % packages
 \usepackage{amsmath}
+\usepackage{bm}
 \usepackage{graphics}
 \usepackage{epstopdf}
 \usepackage{enumitem}
+\usepackage{cite}
 \usepackage[colorlinks]{hyperref}
 \usepackage[xindy, toc, acronym, nonumberlist]{glossaries}
 
@@ -12,10 +14,10 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english,french]{babel}
-%\usepackage{stix}
-\usepackage[sc]{mathpazo}
-\linespread{1.05}
-%\usepackage[urw-garamond]{mathdesign}
+
+%\usepackage[sc]{mathpazo}
+%\linespread{1.05}
+
 
 \include{glossary}
 \makeglossaries
@@ -53,8 +55,15 @@
 \include{evaluation}
 \include{results}
 
-\printglossary
+\nocite{*}
 
+\printglossary
+\clearpage
 \printglossary[type=acronym,style=long]
+
+\clearpage
+
+\bibliographystyle{abbrv}
+\bibliography{bibliography}{}
 
 \end{document}

@@ -33,14 +33,12 @@ used for tuning the hyperparameters\footnote{training the \gls{ubm} and
 \gls{tvm}} of the speaker recognition system and the examples used for
 enrolment+testing do not come from the same dataset. They were recorded in
 different conditions: the microphone used for recording or the environment
-surrounding the speaker may not have been the same. \newline
-
-To apply speaker recognition techniques to real-life conversation, it is
-necessary to find ways to make the system more robust to new conditions. The
-extra-information that comes from a new domain need to be compensated.
-A definition of \emph{domain mismatch compensation} can then be given.
+surrounding the speaker may not have been the same. Thus, to apply speaker
+recognition techniques to real-life conversation, it is necessary to find ways
+to make the system more robust to new conditions. The extra-information that
+comes from a new domain need to be compensated. A definition of \emph{domain
+mismatch compensation} can then be given. \newline
 
 \emph{Compensating} domain mismatch means \emph{filtering out} the information
 in the data that is specific to the domain (dataset) while \emph{emphasizing}
 (or at least leave unimpaired) the speaker-dependent information.
-

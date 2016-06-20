@@ -1,5 +1,6 @@
 MD_FILES=abstract \
 	 domain-mismatch \
+	 speaker-verification \
 	 compensation-techniques \
 	 whiteners-library \
 	 dicn \
@@ -16,4 +17,4 @@ all:
 
 clean:
 	for f in ${MD_FILES}; do rm -f $$f.tex; rm -f $$f.aux; done
-	rm -f *.toc *.aux *.gls *.glo *.glg *.alg *.acn *xdy *.log *.acr *.out *.blg *.bbl
+	rm -f *.toc *.aux *.gls *.glo *.glg *.alg *.acn *xdy *.log *.acr *.out *.blg *.bbl *.sta

@@ -248,3 +248,4 @@ TSWLatexianTemp*
 *.tex
 !report/src.tex
 !report/glossary.tex
+*.sta

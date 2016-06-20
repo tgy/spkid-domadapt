@@ -96,9 +96,7 @@ between the total variability scatter and the between-speaker scatter, thus
 attempting to introduce cross-domain variability into the within-speaker
 scatter matrix. The authors in \cite{mclaren2012} showed that this method
 provided improved performance in NIST SRE12 task, which contained cross-domain
-utterances from telephony, microphone and interview recordings.
-
-### \Acrlong{wccn}
+utterances from telephony, microphone and interview recordings.\newline
 
 A related method, referred to as \gls{wccn}, relies on a conventional
 computation of the between-speaker \gls{scatter-matrix} but adds a correction

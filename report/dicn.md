@@ -1,1 +1,5 @@
-\section{Dataset-Invariant Covariance Normalization}
+# Dataset-Invariant Covariance Normalization
+
+## Length-normalized GPLDA system
+
+

@@ -1,7 +1,8 @@
-\documentclass[12pt]{article}
+\documentclass{article}
 
 % packages
 \usepackage{amsmath}
+\usepackage{float}
 \usepackage{bm}
 \usepackage{graphics}
 \usepackage{epstopdf}
@@ -14,6 +15,13 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english,french]{babel}
+\usepackage[babel=true,kerning=true]{microtype}
+
+% figures
+\usepackage[subpreambles]{standalone}
+\usepackage{tikz}
+\usepackage{pgfplots}
+
 
 %\usepackage[sc]{mathpazo}
 %\linespread{1.05}
@@ -35,7 +43,11 @@
 
 \selectlanguage{english}
 
-\title{Domain Mismatch Compensation for \\Text-Independant Speaker Recognition}
+\title{
+    Domain Mismatch Compensation for\\
+    Text-Independant Speaker Recognition\\
+    \includestandalone[width=\textwidth]{fig/waveform}
+}
 \author{
     Valentin Iovene\\
     Laboratoire de Recherche et Développement de l'EPITA\\
@@ -49,6 +61,7 @@
 \tableofcontents
 
 \include{domain-mismatch}
+\include{speaker-verification}
 \include{compensation-techniques}
 \include{whiteners-library}
 \include{dicn}

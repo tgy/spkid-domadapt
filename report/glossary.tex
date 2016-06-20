@@ -10,12 +10,16 @@
 \newacronym{idvc}{IDVC}{inter-dataset variability compensation}
 \newacronym{swb}{SWB}{Switchboard}
 \newacronym{nap}{NAP}{nuisance attribute projection}
+\newacronym{cms}{CMS}{cepstral mean substraction}
+\newacronym{wccn}{WCCN}{within-class covariance correction}
+\newacronym{eer}{EER}{equal error rate}
+\newacronym{mindcf}{minDCF}{minimum decision cost function}
+\newacronym{det}{DET}{detection error tradeoff}
 
 \newglossaryentry{tvm}
 {
     name=total variability matrix,
-    description={projection matrix used to project \gls{bw-statistics}
-        on the \gls{tvs}}
+    description={matrix used to project \gls{bw-statistics} on the \gls{tvs}}
 }
 
 \newglossaryentry{tvs}
@@ -42,4 +46,24 @@
 {
     name=i-vector,
     description={projection of the \gls{bw-statistics} on the \gls{tvs}}
+}
+
+\longnewglossaryentry{scatter-matrix}
+{
+    name=scatter matrix
+}
+{
+A scatter matrix $S$ is a statistic used to make estimates of a covariance
+matrix.
+
+In the case of a multivariate normal distribution, $S$ can be written as:
+
+$$S = \sum_{i=1}^n (\bm{x}_i - \bar{\bm{x}})
+(\bm{x}_i - \bar{\bm{x}})^t \in \bm{R}^{d \times d}$$
+
+where $n$ is the number of samples, $d$ the number of features, $\bm{x}_i$
+are the samples and $\bar{\bm x}$ their mean.
+
+$S$ is positive definite if there exists a subset of the data consisting of $d$
+affinely independent observations (which we will assume).
 }

@@ -42,10 +42,9 @@ distribution over a specified time interval.
 
 Unlike feature standardization, feature warping guarantees that
 the warped feature distributions are Gaussian, although this may lead to
-a suboptimal mapping when the real distribution is non-Gaussian.
+a suboptimal mapping when the real distribution is non-Gaussian. \newline
 
-Feature warping has now become the standard for compensation at the cepstral
-feature level.
+It has become the standard for cepstral feature normalization.
 
 ## Hyperparameter model conditioning
 

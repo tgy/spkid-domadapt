@@ -3,6 +3,7 @@
 % \newacronym[longplural={Frames per Second}]{fpsLabel}{FPS}{Frame per Second}
 
 \newacronym{ubm}{UBM}{universal background model}
+\newacronym{gmm}{GMM}{gaussian mixture model}
 \newacronym{mfcc}{MFCC}{mel-frequency cepstral coefficients}
 \newacronym{hmm}{HMM}{hidden markov model}
 \newacronym{plda}{PLDA}{probabilistic linear discriminant analysis}
@@ -17,16 +18,31 @@
 \newacronym{det}{DET}{detection error tradeoff}
 \newacronym{vad}{VAD}{voice activity detection}
 
-\newglossaryentry{tvm}
+\longnewglossaryentry{tvm}
 {
-    name=total variability matrix,
-    description={matrix used to project \gls{bw-statistics} on the \gls{tvs}}
+    name=total variability matrix
+}
+{
+a channel-dependant \gls{gmm} supervector $\bm{M}$ can be modeled as follows
+
+\begin{equation}
+\bm{M} = \bm{m} + \bm{T} \bm{w}
+\end{equation}
+
+where $\bm{m}$ is a speaker- and channel-independent supervector (the \gls{ubm}
+supervector is a good estimate of $\bm{m}$, $\bm{T}$ is a low rank matrix, which
+represents a basis of the deduced total variability space and $\bm{w}$ is a
+standard normally distributed vector. $\bm{T}$ is the name of the total
+variability matrix; the components of $\bm{w}$ are the total factors and they
+represent the coordinates of the speaker in the reduced \gls{tvs}. These feature
+vectors are referred to as \emph{identity vectors} or \glspl{i-vector} for
+short.
 }
 
 \newglossaryentry{tvs}
 {
     name=total variability space,
-    description={lower dimentional space on which \gls{bw-statistics}
+    description={lower dimensional space on which \gls{bw-statistics}
         are projected}
 }
 
@@ -72,6 +88,6 @@ affinely independent observations (which we will assume).
 \newglossaryentry{utterance}
 {
     name=utterance,
-    description={speech sequence consisting of one or more words and preceeded
+    description={speech sequence consisting of one or more words and preceded
                  and followed by silence or a change in speaker}
 }
